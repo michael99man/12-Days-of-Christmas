@@ -1,0 +1,220 @@
+[ N 2018-12-25 15:13:26.9146 12274/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2018-12-25 15:13:26.9340 12277/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2018-12-25 15:13:26.9342 12277/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ W 2018-12-25 15:13:26.9787 12277/T1 age/Cor/CoreMain.cpp:1006 ]: WARNING: potential privilege escalation vulnerability detected. Phusion Passenger is running as root, and part(s) of the Passenger root path (/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0) can be changed by non-root user(s):
+
+ - /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm is not secure: it can be modified by group rvm
+
+Please either fix up the permissions for the insecure paths, or install Passenger in a different location that can only be modified by root.
+[ N 2018-12-25 15:13:26.9788 12277/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12277
+[ N 2018-12-25 15:13:29.6526 12277/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 12354 output: RubyDep: WARNING: Your Ruby is outdated/buggy.
+App 12354 output: RubyDep: WARNING: Your Ruby is: 2.3.0 (buggy). Recommendation: upgrade to 2.3.1.
+App 12354 output: RubyDep: WARNING: (To disable warnings, see:http://github.com/e2/ruby_dep/wiki/Disabling-warnings )
+terminate called after throwing an instance of 'Passenger::SystemException'
+  what():  Cannot fork() a new process: Cannot allocate memory (errno=12)
+ERROR: cannot fork a process for executing 'tee'
+
+[ pid=12277, timestamp=1545750810 ] Process aborted! signo=SIGABRT(6), reason=SI_TKILL, signal sent by PID 12277 with UID 0, si_addr=0x2ff5, randomSeed=1545750806
+[ pid=12277 ] Crash log files will be dumped to /var/tmp/passenger-crash-log.1545750810.ZSH5Jp <--- ******* LOOK HERE FOR DETAILS!!! *******
+[ pid=12277 ] Could not fork a child process for dumping diagnostics: fork() failed with errno=12
+2018/12/25 15:13:30 [error] 12303#0: *3 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", upstream: "passenger:unix:/tmp/passenger.95PZXWV/agents.s/core:", host: "0.0.0.0"
+[ W 2018-12-25 15:13:30.7609 12274/T4 age/Wat/AgentWatcher.cpp:97 ]: Passenger core (pid=12277) crashed with signal SIGABRT, restarting it...
+[ N 2018-12-25 15:13:30.7792 12395/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2018-12-25 15:13:30.7794 12395/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ W 2018-12-25 15:13:30.8235 12395/T1 age/Cor/CoreMain.cpp:1006 ]: WARNING: potential privilege escalation vulnerability detected. Phusion Passenger is running as root, and part(s) of the Passenger root path (/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0) can be changed by non-root user(s):
+
+ - /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm is not secure: it can be modified by group rvm
+
+Please either fix up the permissions for the insecure paths, or install Passenger in a different location that can only be modified by root.
+[ N 2018-12-25 15:13:30.8235 12395/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12395
+[ N 2018-12-25 15:13:33.4143 12395/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 12458 output: RubyDep: WARNING: Your Ruby is outdated/buggy.
+App 12458 output: RubyDep: WARNING: Your Ruby is: 2.3.0 (buggy). Recommendation: upgrade to 2.3.1.
+App 12458 output: RubyDep: WARNING: (To disable warnings, see:http://github.com/e2/ruby_dep/wiki/Disabling-warnings )
+terminate called after throwing an instance of 'Passenger::SystemException'
+  what():  Cannot fork() a new process: Cannot allocate memory (errno=12)
+ERROR: cannot fork a process for executing 'tee'
+
+[ pid=12395, timestamp=1545750814 ] Process aborted! signo=SIGABRT(6), reason=SI_TKILL, signal sent by PID 12395 with UID 0, si_addr=0x306b, randomSeed=1545750810
+[ pid=12395 ] Crash log files will be dumped to /var/tmp/passenger-crash-log.1545750814.GBf4j9 <--- ******* LOOK HERE FOR DETAILS!!! *******
+[ pid=12395 ] Could not fork a child process for dumping diagnostics: fork() failed with errno=12
+2018/12/25 15:13:34 [error] 12303#0: *5 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", upstream: "passenger:unix:/tmp/passenger.95PZXWV/agents.s/core:", host: "0.0.0.0"
+[ W 2018-12-25 15:13:34.6584 12274/T4 age/Wat/AgentWatcher.cpp:97 ]: Passenger core (pid=12395) crashed with signal SIGABRT, restarting it...
+[ N 2018-12-25 15:13:34.6732 12499/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2018-12-25 15:13:34.6733 12499/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ W 2018-12-25 15:13:34.7166 12499/T1 age/Cor/CoreMain.cpp:1006 ]: WARNING: potential privilege escalation vulnerability detected. Phusion Passenger is running as root, and part(s) of the Passenger root path (/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0) can be changed by non-root user(s):
+
+ - /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm is not secure: it can be modified by group rvm
+
+Please either fix up the permissions for the insecure paths, or install Passenger in a different location that can only be modified by root.
+[ N 2018-12-25 15:13:34.7166 12499/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12499
+App 12558 output: RubyDep: WARNING: Your Ruby is outdated/buggy.
+App 12558 output: RubyDep: WARNING: Your Ruby is: 2.3.0 (buggy). Recommendation: upgrade to 2.3.1.
+App 12558 output: RubyDep: WARNING: (To disable warnings, see:http://github.com/e2/ruby_dep/wiki/Disabling-warnings )
+[ E 2018-12-25 15:13:36.7168 12499/T7 Utils.cpp:316 ]: Exception: Cannot fork() a new process: Cannot allocate memory (errno=12)
+     (empty)
+ERROR: cannot fork a process for executing 'tee'
+
+[ pid=12499, timestamp=1545750816 ] Process aborted! signo=SIGABRT(6), reason=SI_TKILL, signal sent by PID 12499 with UID 0, si_addr=0x30d3, randomSeed=1545750814
+[ pid=12499 ] Crash log files will be dumped to /var/tmp/passenger-crash-log.1545750816.DXutec <--- ******* LOOK HERE FOR DETAILS!!! *******
+[ pid=12499 ] Could not fork a child process for dumping diagnostics: fork() failed with errno=12
+[ W 2018-12-25 15:13:36.7185 12274/T4 age/Wat/AgentWatcher.cpp:97 ]: Passenger core (pid=12499) crashed with signal SIGABRT, restarting it...
+[ N 2018-12-25 15:13:36.7353 12602/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2018-12-25 15:13:36.7355 12602/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ W 2018-12-25 15:13:36.7800 12602/T1 age/Cor/CoreMain.cpp:1006 ]: WARNING: potential privilege escalation vulnerability detected. Phusion Passenger is running as root, and part(s) of the Passenger root path (/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0) can be changed by non-root user(s):
+
+ - /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm is not secure: it can be modified by group rvm
+
+Please either fix up the permissions for the insecure paths, or install Passenger in a different location that can only be modified by root.
+[ N 2018-12-25 15:13:36.7800 12602/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12602
+2018/12/25 15:13:36 [error] 12303#0: *7 upstream prematurely closed connection while reading response header from upstream, client: 67.175.80.81, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/tmp/passenger.95PZXWV/agents.s/core:", host: "michaelman.net:3000"
+[ E 2018-12-25 15:13:38.7805 12602/T7 Utils.cpp:316 ]: Exception: Cannot fork() a new process: Cannot allocate memory (errno=12)
+     (empty)
+ERROR: cannot fork a process for executing 'tee'
+
+[ pid=12602, timestamp=1545750818 ] Process aborted! signo=SIGABRT(6), reason=SI_TKILL, signal sent by PID 12602 with UID 0, si_addr=0x313a, randomSeed=1545750816
+[ pid=12602 ] Crash log files will be dumped to /var/tmp/passenger-crash-log.1545750818.bnK6qt <--- ******* LOOK HERE FOR DETAILS!!! *******
+[ pid=12602 ] Could not fork a child process for dumping diagnostics: fork() failed with errno=12
+[ W 2018-12-25 15:13:38.7826 12274/T4 age/Wat/AgentWatcher.cpp:97 ]: Passenger core (pid=12602) crashed with signal SIGABRT, restarting it...
+[ N 2018-12-25 15:13:38.7973 12666/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2018-12-25 15:13:38.7974 12666/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+2018/12/25 15:13:38 [error] 12303#0: *7 upstream prematurely closed connection while reading response header from upstream, client: 67.175.80.81, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/tmp/passenger.95PZXWV/agents.s/core:", host: "michaelman.net:3000"
+[ W 2018-12-25 15:13:38.8403 12666/T1 age/Cor/CoreMain.cpp:1006 ]: WARNING: potential privilege escalation vulnerability detected. Phusion Passenger is running as root, and part(s) of the Passenger root path (/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0) can be changed by non-root user(s):
+
+ - /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm is not secure: it can be modified by group rvm
+
+Please either fix up the permissions for the insecure paths, or install Passenger in a different location that can only be modified by root.
+[ N 2018-12-25 15:13:38.8403 12666/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12666
+[ N 2018-12-25 15:13:41.4595 12666/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 12759 output: RubyDep: WARNING: Your Ruby is outdated/buggy.
+App 12759 output: RubyDep: WARNING: Your Ruby is: 2.3.0 (buggy). Recommendation: upgrade to 2.3.1.
+App 12759 output: RubyDep: WARNING: (To disable warnings, see:http://github.com/e2/ruby_dep/wiki/Disabling-warnings )
+terminate called after throwing an instance of 'Passenger::SystemException'
+  what():  Cannot fork() a new process: Cannot allocate memory (errno=12)
+ERROR: cannot fork a process for executing 'tee'
+
+[ pid=12666, timestamp=1545750822 ] Process aborted! signo=SIGABRT(6), reason=SI_TKILL, signal sent by PID 12666 with UID 0, si_addr=0x317a, randomSeed=1545750818
+[ pid=12666 ] Crash log files will be dumped to /var/tmp/passenger-crash-log.1545750822.FOwWy2 <--- ******* LOOK HERE FOR DETAILS!!! *******
+[ pid=12666 ] Could not fork a child process for dumping diagnostics: fork() failed with errno=12
+2018/12/25 15:13:42 [error] 12303#0: *11 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", upstream: "passenger:unix:/tmp/passenger.95PZXWV/agents.s/core:", host: "0.0.0.0"
+[ W 2018-12-25 15:13:42.6837 12274/T4 age/Wat/AgentWatcher.cpp:97 ]: Passenger core (pid=12666) crashed with signal SIGABRT, restarting it...
+[ N 2018-12-25 15:13:42.6995 12800/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2018-12-25 15:13:42.6997 12800/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ W 2018-12-25 15:13:42.7461 12800/T1 age/Cor/CoreMain.cpp:1006 ]: WARNING: potential privilege escalation vulnerability detected. Phusion Passenger is running as root, and part(s) of the Passenger root path (/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0) can be changed by non-root user(s):
+
+ - /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm is not secure: it can be modified by group rvm
+
+Please either fix up the permissions for the insecure paths, or install Passenger in a different location that can only be modified by root.
+[ N 2018-12-25 15:13:42.7461 12800/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12800
+[ N 2018-12-25 15:13:45.3666 12800/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 12863 output: RubyDep: WARNING: Your Ruby is outdated/buggy.
+App 12863 output: RubyDep: WARNING: Your Ruby is: 2.3.0 (buggy). Recommendation: upgrade to 2.3.1.
+App 12863 output: RubyDep: WARNING: (To disable warnings, see:http://github.com/e2/ruby_dep/wiki/Disabling-warnings )
+terminate called after throwing an instance of 'Passenger::SystemException'
+  what():  Cannot fork() a new process: Cannot allocate memory (errno=12)
+ERROR: cannot fork a process for executing 'tee'
+
+[ pid=12800, timestamp=1545750826 ] Process aborted! signo=SIGABRT(6), reason=SI_TKILL, signal sent by PID 12800 with UID 0, si_addr=0x3200, randomSeed=1545750822
+[ pid=12800 ] Crash log files will be dumped to /var/tmp/passenger-crash-log.1545750826.tjo6NL <--- ******* LOOK HERE FOR DETAILS!!! *******
+[ pid=12800 ] Could not fork a child process for dumping diagnostics: fork() failed with errno=12
+2018/12/25 15:13:46 [error] 12303#0: *13 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", upstream: "passenger:unix:/tmp/passenger.95PZXWV/agents.s/core:", host: "0.0.0.0"
+[ W 2018-12-25 15:13:46.6450 12274/T4 age/Wat/AgentWatcher.cpp:97 ]: Passenger core (pid=12800) crashed with signal SIGABRT, restarting it...
+[ N 2018-12-25 15:13:46.6615 12904/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2018-12-25 15:13:46.6616 12904/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ W 2018-12-25 15:13:46.7063 12904/T1 age/Cor/CoreMain.cpp:1006 ]: WARNING: potential privilege escalation vulnerability detected. Phusion Passenger is running as root, and part(s) of the Passenger root path (/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0) can be changed by non-root user(s):
+
+ - /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems/ruby-2.3.0 is not secure: it can be modified by group rvm
+ - /usr/local/rvm/gems is not secure: it can be modified by group rvm
+ - /usr/local/rvm is not secure: it can be modified by group rvm
+
+Please either fix up the permissions for the insecure paths, or install Passenger in a different location that can only be modified by root.
+[ N 2018-12-25 15:13:46.7063 12904/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12904
+
+[ N 2018-12-25 15:13:49.1788 12904/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-12-25 15:13:49.1789 12904/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-12-25 15:13:49.1790 12904/T8 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1790 12904/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2018-12-25 15:13:49.1791 12904/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1791 12904/Te Ser/Server.h:902 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1791 12904/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2018-12-25 15:13:49.1791 12904/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2018-12-25 15:13:49.1792 12904/Tg Ser/Server.h:902 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1792 12904/Tk Ser/Server.h:902 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1792 12904/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2018-12-25 15:13:49.1792 12904/Tm Ser/Server.h:902 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1792 12904/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2018-12-25 15:13:49.1792 12904/Tc Ser/Server.h:902 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1792 12904/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2018-12-25 15:13:49.1792 12904/To Ser/Server.h:902 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1792 12904/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2018-12-25 15:13:49.1793 12904/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2018-12-25 15:13:49.1793 12904/Ts Ser/Server.h:902 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1793 12904/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2018-12-25 15:13:49.1793 12904/Ti Ser/Server.h:902 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1793 12904/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2018-12-25 15:13:49.1793 12904/Tu Ser/Server.h:902 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1793 12904/Tw Ser/Server.h:902 ]: [ServerThr.13] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1793 12904/Ty Ser/Server.h:902 ]: [ServerThr.14] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1794 12904/Tq Ser/Server.h:902 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1794 12904/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2018-12-25 15:13:49.1794 12904/T10 Ser/Server.h:902 ]: [ServerThr.15] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1794 12904/Tw Ser/Server.h:558 ]: [ServerThr.13] Shutdown finished
+[ N 2018-12-25 15:13:49.1794 12904/Ty Ser/Server.h:558 ]: [ServerThr.14] Shutdown finished
+[ N 2018-12-25 15:13:49.1794 12904/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2018-12-25 15:13:49.1794 12904/T12 Ser/Server.h:902 ]: [ServerThr.16] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1794 12904/T10 Ser/Server.h:558 ]: [ServerThr.15] Shutdown finished
+[ N 2018-12-25 15:13:49.1794 12904/T14 Ser/Server.h:902 ]: [ServerThr.17] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1795 12904/T12 Ser/Server.h:558 ]: [ServerThr.16] Shutdown finished
+[ N 2018-12-25 15:13:49.1794 12904/T16 Ser/Server.h:902 ]: [ServerThr.18] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1795 12904/T18 Ser/Server.h:902 ]: [ServerThr.19] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1795 12904/T14 Ser/Server.h:558 ]: [ServerThr.17] Shutdown finished
+[ N 2018-12-25 15:13:49.1795 12904/T16 Ser/Server.h:558 ]: [ServerThr.18] Shutdown finished
+[ N 2018-12-25 15:13:49.1795 12904/T18 Ser/Server.h:558 ]: [ServerThr.19] Shutdown finished
+[ N 2018-12-25 15:13:49.1795 12904/T1c Ser/Server.h:902 ]: [ServerThr.21] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1795 12904/T1a Ser/Server.h:902 ]: [ServerThr.20] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1795 12904/T1c Ser/Server.h:558 ]: [ServerThr.21] Shutdown finished
+[ N 2018-12-25 15:13:49.1795 12904/T1e Ser/Server.h:902 ]: [ServerThr.22] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1796 12904/T1a Ser/Server.h:558 ]: [ServerThr.20] Shutdown finished
+[ N 2018-12-25 15:13:49.1796 12904/T1g Ser/Server.h:902 ]: [ServerThr.23] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1796 12904/T1e Ser/Server.h:558 ]: [ServerThr.22] Shutdown finished
+[ N 2018-12-25 15:13:49.1796 12904/T1g Ser/Server.h:558 ]: [ServerThr.23] Shutdown finished
+[ N 2018-12-25 15:13:49.1796 12904/T1i Ser/Server.h:902 ]: [ServerThr.24] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1796 12904/T1i Ser/Server.h:558 ]: [ServerThr.24] Shutdown finished
+[ N 2018-12-25 15:13:49.1797 12904/T1k Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-12-25 15:13:49.1798 12904/T1k Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+/usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0/src/helper-scripts/prespawn:131:in `initialize': Address family not supported by protocol - socket(2) for "::1" port 3000 (Errno::EAFNOSUPPORT)
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0/src/helper-scripts/prespawn:131:in `new'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0/src/helper-scripts/prespawn:131:in `rescue in connect'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0/src/helper-scripts/prespawn:129:in `connect'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0/src/helper-scripts/prespawn:89:in `socket'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0/src/helper-scripts/prespawn:108:in `head_request'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/passenger-6.0.0/src/helper-scripts/prespawn:171:in `<main>'
+[ N 2018-12-25 15:13:49.3388 12904/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2018-12-25 15:13:50.0664 12904/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished

@@ -1,0 +1,118 @@
+<!--<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Multiverse by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+!-->
+
+<% content_for :body_class, "is-preload" %>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="" onclick="return false;"><strong>12 Days of Christmas <span id="rewind">| Mully Rewind 2018</span></strong></a></h1>
+						<nav>
+							<ul>
+								<li><a href="#footer" class="icon fa-info-circle">HULLO!</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<% @count = 0  %>
+
+						<% @entries.each do |e| %>
+							<% @count +=1  %>
+
+							<article class="thumb">
+								<a href="<%= e.image %>" class="image"><img src="<%= e.thumbnail %>" alt="" /></a>	
+								<h2>Day <%=e.day%>: <%=e.title%></h2>
+								<p><%=e.text%></p>
+							</article>
+						<% end %>
+
+				
+						
+						<!--
+						<article class="thumb">
+							<a href="<%=image_path('fulls/02.jpg')%>" class="image"><img src="<%=image_path('thumbs/02.jpg')%>" alt="" /></a>
+							<h2>Nisl adipiscing</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/03.jpg')%>" class="image"><img src="<%=image_path('thumbs/03.jpg')%>" alt="" /></a>
+							<h2>Tempus aliquam veroeros</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/04.jpg')%>" class="image"><img src="<%=image_path('thumbs/04.jpg')%>" alt="" /></a>
+							<h2>Aliquam ipsum sed dolore</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/05.jpg')%>" class="image"><img src="<%=image_path('thumbs/05.jpg')%>" alt="" /></a>
+							<h2>Cursis aliquam nisl</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/06.jpg')%>" class="image"><img src="<%=image_path('thumbs/06.jpg')%>" alt="" /></a>
+							<h2>Sed consequat phasellus</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/07.jpg')%>" class="image"><img src="<%=image_path('thumbs/07.jpg')%>" alt="" /></a>
+							<h2>Mauris id tellus arcu</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/08.jpg')%>" class="image"><img src="<%=image_path('thumbs/08.jpg')%>" alt="" /></a>
+							<h2>Nunc vehicula id nulla</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/09.jpg')%>" class="image"><img src="<%=image_path('thumbs/09.jpg')%>" alt="" /></a>
+							<h2>Neque et faucibus viverra</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/10.jpg')%>" class="image"><img src="<%=image_path('thumbs/10.jpg')%>" alt="" /></a>
+							<h2>Mattis ante fermentum</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/11.jpg')%>" class="image"><img src="<%=image_path('thumbs/11.jpg')%>" alt="" /></a>
+							<h2>Sed ac elementum arcu</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="<%=image_path('fulls/12.jpg')%>" class="image"><img src="<%=image_path('thumbs/12.jpg')%>" alt="" /></a>
+							<h2>Vehicula id nulla dignissim</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+					-->
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								<section>
+									<h2>Dear Mully...</h2>
+									<p>Thank you for making 2018 so perfect. In the last year, we've gone on exciting adventures, laughed at new silly jokes, ate tons of great food, but most importantly, we've made some beautiful memories. For each of the 12 days of Christmas, this app will show one of my most cherished memories from 2018. I know this present is a bit silly, but I hope we'll be able to relive some of the perfect moments that define the life of Mikey & Mully  <span class="fa fa-heart"></span></p>
+								</section>
+								<section>
+								</section>
+								
+							</div>
+						</div>
+					</footer>
+
+			</div>
